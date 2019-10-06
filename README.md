@@ -4,7 +4,7 @@
 This library provides a base class for building Homebridge plugins that communicate via MQTT.
 
 ## Basic usage
-```
+```JavaScript
 'use strict';
 
 const { HomebridgeMQTTBase } = require('homebridge-mqtt-base')
