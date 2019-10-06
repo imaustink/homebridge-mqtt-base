@@ -1,0 +1,41 @@
+{
+  "name": "homebridge-mqtt-base",
+  "version": "1.0.0",
+  "description": "A base class implementing Homebridge plugins with MQTT communication",
+  "main": "index.js",
+  "scripts": {
+    "test": "nyc ava",
+    "test:watch": "ava --watch"
+  },
+  "ava": {
+    "require": [
+      "@babel/register"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imaustink/homebridge-mqtt-base.git"
+  },
+  "keywords": [
+    "Homebridge",
+    "HomeKit",
+    "MQTT"
+  ],
+  "author": "Austin Kurpuis",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/imaustink/homebridge-mqtt-base/issues"
+  },
+  "homepage": "https://github.com/imaustink/homebridge-mqtt-base#readme",
+  "dependencies": {
+    "lodash": "^4.17.15",
+    "mqtt": "^3.0.0"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/register": "^7.6.2",
+    "ava": "^2.4.0",
+    "nyc": "^14.1.1",
+    "sinon": "^7.5.0"
+  }
+}
