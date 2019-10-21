@@ -2,8 +2,10 @@
   "name": "homebridge-mqtt-base",
   "version": "1.0.0",
   "description": "A base class implementing Homebridge plugins with MQTT communication",
-  "main": "index.js",
+  "main": "./dist/HomebridgeMQTTBase.js",
   "scripts": {
+    "build": "babel src --presets=@babel/preset-env --out-dir dist",
+    "prepublish": "npm run build",
     "test": "nyc ava",
     "test:watch": "ava --watch"
   },
@@ -32,7 +34,9 @@
     "mqtt": "^3.0.0"
   },
   "devDependencies": {
+    "@babel/cli": "^7.6.4",
     "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/preset-env": "^7.6.3",
     "@babel/register": "^7.6.2",
     "ava": "^2.4.0",
     "nyc": "^14.1.1",
